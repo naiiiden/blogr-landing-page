@@ -8,29 +8,45 @@
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+  <header>
+    <img src="images/logo.svg" class="logo" alt="logo">
+    <button id="hamburger" class="hamburger" aria-label="toggle navigation">
+      <img src="images/icon-hamburger.svg" id="menu-icon" alt="">
+    </button>
+    <nav>
+      <ul id="nav-ul" class="nav-ul">
+        <li class="hover">
+          <span class="hoverable_link" href="">Product</span>
+          <ul class="dropdown">
+            <li><a href="">Overview</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Integrations</a></li>
+          </ul>
+        </li>
+        <li class="hover">
+          <span class="hoverable_link" href="">Company</span>
+          <ul class="dropdown">
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </li>
+        <li class="hover">
+          <span class="hoverable_link" href="">Connect</span>
+          <ul class="dropdown">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
 
   A modern publishing platform
   Grow your audience and build your online brand
