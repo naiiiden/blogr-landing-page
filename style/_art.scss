@@ -1,10 +1,10 @@
 .art {
-    margin: 10rem 0;
+    margin: 12.5rem 0 2rem 0;
     padding: 15.5rem 1.5rem 5rem 1.5rem;
     background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     position: relative;
-    border-bottom-left-radius: 10rem;
-    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 7.5rem;
+    border-top-right-radius: 7.5rem;
 
     img {
         max-width: 100%;
@@ -50,6 +50,7 @@
 
 @media screen and (min-width: 1024px) {
     .art {
+        margin: 10rem 0;
         padding: 10rem 9rem 10rem 9rem;
         height: 27.5rem;
 
