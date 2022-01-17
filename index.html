@@ -9,14 +9,20 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" class="logo" alt="logo">
-    <button id="hamburger" class="hamburger" aria-label="toggle navigation">
-      <img src="images/icon-hamburger.svg" id="menu-icon" alt="">
-    </button>
+    <div class="logo_button_wrapper">
+      <img src="images/logo.svg" class="logo" alt="logo">
+      <button id="hamburger" class="hamburger" aria-label="toggle navigation">
+        <img src="images/icon-hamburger.svg" id="menu-icon" alt="">
+      </button>
+    </div>
     <nav>
       <ul id="nav-ul" class="nav-ul">
         <li class="hover">
-          <span class="hoverable_link" href="">Product</span>
+          <span class="hoverable_link" href="">
+            Product 
+            <img src="images/icon-arrow-dark.svg" class="arrow_mobile" alt="">
+            <img src="images/icon-arrow-light.svg" class="arrow_desktop" alt="">
+          </span>
           <ul class="dropdown">
             <li><a href="">Overview</a></li>
             <li><a href="">Pricing</a></li>
@@ -24,26 +30,37 @@
             <li><a href="">Features</a></li>
             <li><a href="">Integrations</a></li>
           </ul>
+          <div class="border"></div>
         </li>
         <li class="hover">
-          <span class="hoverable_link" href="">Company</span>
+          <span class="hoverable_link" href="">
+            Company
+            <img src="images/icon-arrow-dark.svg" class="arrow_mobile" alt="">
+            <img src="images/icon-arrow-light.svg" class="arrow_desktop" alt="">
+          </span>
           <ul class="dropdown">
             <li><a href="">About</a></li>
             <li><a href="">Team</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Careers</a></li>
           </ul>
+          <div class="border"></div>
         </li>
         <li class="hover">
-          <span class="hoverable_link" href="">Connect</span>
+          <span class="hoverable_link" href="">
+            Connect
+            <img src="images/icon-arrow-dark.svg" class="arrow_mobile" alt="">
+            <img src="images/icon-arrow-light.svg" class="arrow_desktop" alt="">
+          </span>
           <ul class="dropdown">
             <li><a href="">Contact</a></li>
             <li><a href="">Newsletter</a></li>
             <li><a href="">LinkedIn</a></li>
           </ul>
+          <div class="border"></div>
         </li>
         <li><a href="">Login</a></li>
-        <li><a href="">Sign Up</a></li>
+        <li><a class="signup" href="">Sign Up</a></li>
       </ul>
     </nav>
   </header>
