@@ -1,6 +1,5 @@
 @media screen and (max-width: 1023px) {
     header {
-        background: red; //placeholder background
         padding: 1.5rem 0;
         display: flex;
         justify-content: center;
@@ -139,7 +138,6 @@
 @media screen and (min-width: 1024px) {
     header {
         height: 8.75rem;
-        background: red;
         padding: 3rem 9rem;
         display: flex;
         align-items: center;

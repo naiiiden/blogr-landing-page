@@ -1,0 +1,54 @@
+.header_main_wrapper {
+    height: 100vh;
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 10rem;
+    overflow: hidden;
+
+    .pattern_mobile {
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        width: 55rem;    
+        top: -5rem;
+        right: -20.5rem;
+    }
+
+    .pattern_desktop {
+        display: none;
+    }
+}
+
+
+
+main, header {
+    position: inherit;
+    z-index: 2;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1024px) {
+    .header_main_wrapper {
+        .pattern_mobile {
+            display: none;
+        }
+
+        .pattern_desktop {
+            display: block;
+            position: absolute;
+            z-index: -2;
+            user-select: none;
+            width: 200rem;
+            top: -65rem;
+            right: -50rem;
+        }
+    }
+}

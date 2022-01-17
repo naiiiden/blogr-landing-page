@@ -11,14 +11,8 @@ body {
   min-height: 100vh;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 1023px) {
   header {
-    background: red;
     padding: 1.5rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -181,7 +175,6 @@ img {
 @media screen and (min-width: 1024px) {
   header {
     height: 8.75rem;
-    background: red;
     padding: 3rem 9rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +296,6 @@ img {
 }
 
 main {
-  background: red;
   color: #fff;
   padding: 1.5rem;
   font-family: Overpass, sans-serif;
@@ -384,6 +376,61 @@ main .buttons_wrapper button.learn:hover {
     width: 9rem;
     height: 3rem;
     font-size: 1rem;
+  }
+}
+
+.header_main_wrapper {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(#ff8f70, #ff3d54);
+  position: relative;
+  z-index: 1;
+  border-bottom-left-radius: 10rem;
+  overflow: hidden;
+}
+
+.header_main_wrapper .pattern_mobile {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  width: 55rem;
+  top: -5rem;
+  right: -20.5rem;
+}
+
+.header_main_wrapper .pattern_desktop {
+  display: none;
+}
+
+main, header {
+  position: inherit;
+  z-index: 2;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  .header_main_wrapper .pattern_mobile {
+    display: none;
+  }
+  .header_main_wrapper .pattern_desktop {
+    display: block;
+    position: absolute;
+    z-index: -2;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 200rem;
+    top: -65rem;
+    right: -50rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
