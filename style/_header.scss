@@ -135,3 +135,115 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 8.75rem;
+        background: red;
+        padding: 3rem 9rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            flex-grow: 1;
+
+            .nav-ul {
+                list-style-type: none;
+                display: flex;
+                gap: 1.5rem;
+
+                .push_right {
+                    margin-left: auto;
+                }
+
+                .margin_right {
+                    margin-left: 3rem;
+                }
+
+                a {
+                    cursor: pointer;
+                    font-family: Overpass, sans-serif;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: #fff;
+                    height: 8.75rem;
+                    display: flex;
+                    align-items: center;
+
+                    &.signup {
+                        span {
+                            background: #fff;
+                            padding: .75rem 1.5rem;
+                            border-radius: 2rem;
+                            color:hsl(353, 100%, 62%);
+                            
+                        }
+                    }
+                }
+
+                .hover {
+                    height: 8.75rem;
+                    display: flex;
+                    align-items: center;
+
+                    .arrow_mobile, .dropdown {
+                        display: none;
+                    }
+
+                    position: relative;
+                    
+                    span {
+                        cursor: pointer;
+                        color: #fff;
+                        font-family: Overpass, sans-serif;
+                        font-weight: 700;
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        text-decoration: underline;
+                        text-decoration-thickness: .15rem;
+
+                        .dropdown {
+                            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                            list-style-type: none;
+                            border-radius: .25rem;
+                            padding: 1rem;
+                            position: absolute;
+                            top: 5.5rem;
+                            background: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            width: 8rem;
+
+                            a {
+                                color: $very-dark-black-blue;
+                                height: min-content;
+                                font-weight: 400;
+
+                                &:hover {
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+
+                        .arrow_desktop {
+                            transform: rotateX(180deg);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
