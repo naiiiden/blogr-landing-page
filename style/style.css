@@ -301,4 +301,89 @@ img {
     transition: .3s;
   }
 }
+
+main {
+  background: red;
+  color: #fff;
+  padding: 1.5rem;
+  font-family: Overpass, sans-serif;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .buttons_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+main .buttons_wrapper button {
+  border: none;
+  border-radius: 2rem;
+  width: 7.5rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main .buttons_wrapper button.start {
+  color: #ff3d54;
+}
+
+main .buttons_wrapper button.start:hover {
+  background: #ff525d;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main .buttons_wrapper button.learn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+main .buttons_wrapper button.learn:hover {
+  color: #ff3d54;
+  background: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem 9rem;
+    gap: 2rem;
+  }
+  main h1 {
+    font-size: 4rem;
+  }
+  main p {
+    font-size: 1.1rem;
+  }
+  main .buttons_wrapper {
+    margin-top: 3rem;
+  }
+  main .buttons_wrapper button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

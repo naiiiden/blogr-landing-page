@@ -1,0 +1,77 @@
+main {
+    background: red;
+    color: #fff;
+    padding: 1.5rem;
+    font-family: Overpass, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+
+    .buttons_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        button {
+            border: none;
+            border-radius: 2rem;
+            width: 7.5rem;
+            height: 2.5rem;
+            padding: 0 1rem;
+            font-family: Ubuntu;
+            font-weight: 700;
+            cursor: pointer;
+
+            &.start {
+                color: hsl(353, 100%, 62%);
+
+                &:hover {
+                    background: $light-red;
+                    color: #fff;
+                    transition: .2s;
+                }
+            }
+
+            &.learn {
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+
+                &:hover {
+                    color: hsl(353, 100%, 62%);
+                    background: #fff;
+                    transition: .2s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 3rem 9rem;
+        gap: 2rem;
+        
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .buttons_wrapper {       
+            margin-top: 3rem;
+            
+            button {
+                width: 9rem;
+                height: 3rem;
+                font-size: 1rem;
+            }
+        }
+
+    }
+}
